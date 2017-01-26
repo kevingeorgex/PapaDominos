@@ -1,0 +1,2 @@
+login.html calls login_validate.php which has database queries
+it calls validate-login.js and replaces with index.html,also control goes to main.js  

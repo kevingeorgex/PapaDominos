@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Create account | Corleone's</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/create-acc.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+<body>
+		<header id="header"><!--header-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+		</header><!--/header-->
+	
+	<section id="form"><!--form-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<h2>CREATE YOUR ACCOUNT</h2>
+						<div class="login-form">
+							<form name="acc-regForm" method="POST" action="php/new_account_reg.php" id="acc-regForm">
+								<h4>Login details</h4>
+								<input type="email" placeholder="Email address(This will be your username)*" id="field_email" name="field_email"/>
+								<input type="email" placeholder="Confirm email address*" id="field_confirm_email" name="field_confirm_email"/>
+								<input type="password" placeholder="Password*" id="field_pwd" name="field_pwd"/>
+								<div id="pswd_info">
+								    <h4>Password must meet the following requirements:</h4>
+								    <ul>
+								        <li id="letter" class="invalid">At least <strong>one letter</strong></li>
+								        <li id="capital" class="invalid">At least <strong>one capital letter</strong></li>
+								        <li id="number" class="invalid">At least <strong>one number</strong></li>
+								        <li id="length" class="invalid">Be at least <strong>8 characters</strong></li>
+								    </ul>
+								</div>
+								<input type="password" placeholder="Confirm Password*" id="field_confirm_pwd" name="field_confirm_pwd"/>
+								<br><br>
+								<h4>Personal Details</h4>
+								<input type="text" placeholder="Full Name*" id="field_name" name="field_name"/>
+								<input placeholder="Telephone Number*" id="field_phone" name="field_phone"/>
+								<br><br>
+								<h4>Location Details</h4>
+								<div class="col-sm-6">
+									<input type="text" placeholder="Street Address*" id="field_streetname" name="field_streetname"/>
+								</div>
+								<div class="col-sm-2">
+									<select name="apt_suite" id="apt_suite">
+										<option value="apt">APT</option>
+										<option value="suite">SUITE</option>
+									</select>
+								</div>
+								<div class="col-sm-4">
+									<input type="text" placeholder="APT/SUITE number*" id="field_aptnum" name="field_aptnum"/>
+								</div>
+								<div class="col-sm-6">
+									<input type="text" placeholder="City*" id="field_city" name="field_city"/>
+								</div>
+								<div class="col-sm-2">
+									<select id="state" name="state">
+										<option value="AL">Alabama</option>
+										<option value="AK">Alaska</option>
+										<option value="AZ">Arizona</option>
+										<option value="AR">Arkansas</option>
+										<option value="CA">California</option>
+										<option value="CO">Colorado</option>
+										<option value="CT">Connecticut</option>
+										<option value="DE">Delaware</option>
+										<option value="DC">District Of Columbia</option>
+										<option value="FL">Florida</option>
+										<option value="GA">Georgia</option>
+										<option value="HI">Hawaii</option>
+										<option value="ID">Idaho</option>
+										<option value="IL">Illinois</option>
+										<option value="IN">Indiana</option>
+										<option value="IA">Iowa</option>
+										<option value="KS">Kansas</option>
+										<option value="KY">Kentucky</option>
+										<option value="LA">Louisiana</option>
+										<option value="ME">Maine</option>
+										<option value="MD">Maryland</option>
+										<option value="MA">Massachusetts</option>
+										<option value="MI">Michigan</option>
+										<option value="MN">Minnesota</option>
+										<option value="MS">Mississippi</option>
+										<option value="MO">Missouri</option>
+										<option value="MT">Montana</option>
+										<option value="NE">Nebraska</option>
+										<option value="NV">Nevada</option>
+										<option value="NH">New Hampshire</option>
+										<option value="NJ">New Jersey</option>
+										<option value="NM">New Mexico</option>
+										<option value="NY">New York</option>
+										<option value="NC">North Carolina</option>
+										<option value="ND">North Dakota</option>
+										<option value="OH">Ohio</option>
+										<option value="OK">Oklahoma</option>
+										<option value="OR">Oregon</option>
+										<option value="PA">Pennsylvania</option>
+										<option value="RI">Rhode Island</option>
+										<option value="SC">South Carolina</option>
+										<option value="SD">South Dakota</option>
+										<option value="TN">Tennessee</option>
+										<option value="TX">Texas</option>
+										<option value="UT">Utah</option>
+										<option value="VT">Vermont</option>
+										<option value="VA">Virginia</option>
+										<option value="WA">Washington</option>
+										<option value="WV">West Virginia</option>
+										<option value="WI">Wisconsin</option>
+										<option value="WY">Wyoming</option>
+									</select>
+								</div>	
+								<div class="col-sm-4">
+									<input type="text" placeholder="Zip Code*" id="field_zip" name="field_zip"/>
+								</div>
+								<br><br>
+								<div class="row">
+									<div class="col-sm-2">
+										<input type="checkbox" name="agreement"/>
+									</div>
+									<div class="col-sm-8">
+										<h2>I agree that I am above 13 years of age</h2>
+									</div>
+								</div>
+								<br><br>
+								<div class="col-sm-2">
+									<button type="submit" class="btn btn-default">Submit</button>
+								</div>
+								<div class="col-sm-2" id="reset">
+									<button type="reset" value="Reset">Reset</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	
+		
+		
+	<!--/Footer-->
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/validate-reg.js"></script>
+    
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/additional-methods.min.js"></script>
+</body>
+</html>
+	
